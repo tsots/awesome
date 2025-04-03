@@ -21,6 +21,9 @@ function App() {
         <Route path="jobs/:title" element={<Job data={data} />} />
       </Route>,
     ),
+    {
+      basename: "/awesome/",
+    },
   );
 
   console.log(data);
